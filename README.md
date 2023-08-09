@@ -1,4 +1,4 @@
-# Webstore
+# PhenoVista Digital Storefront
 ## Table of Contents
 
 - [Getting Started](#getting-started)
