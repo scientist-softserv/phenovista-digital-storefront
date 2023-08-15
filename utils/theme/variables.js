@@ -33,11 +33,11 @@ export const statusColors = {
     text: white,
   },
   'Work Started': {
-    bg: secondary,
+    bg: info,
     text: white,
   },
   'Work Completed': {
-    bg: dark,
-    text: light,
+    bg: success,
+    text: white,
   },
 }
