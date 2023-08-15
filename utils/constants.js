@@ -1,4 +1,4 @@
-import logo from '../assets/svg/bbs-logo-white.png'
+import logo from '../assets/svg/pv-logo-white.png'
 import item from '../assets/img/louis-reed-pwcKF7L4-no-unsplash.jpg'
 
 export const DEFAULT_WARE_IMAGE = {
@@ -6,12 +6,12 @@ export const DEFAULT_WARE_IMAGE = {
   alt: 'Several rows of test tubes with a liquid being put into one.',
 }
 
-export const APP_TITLE = 'Beachside Biotechnology Services - WebStore'
+export const APP_TITLE = 'PhenoVista Biosciences | Digital Storefront'
 
 export const ABOUT_US_TITLE = 'About Us'
 
 /* eslint-disable max-len */
-export const ABOUT_US_TEXT = `Beachside Biotechnology Services is a multinational value, evidence and market access commercialization solutions organization. We deliver end-to-end clinical evidence services from Phase I to IV, plus medical affairs and commercial market access strategy and support and the  Best Service Ever .\nOur team includes senior leaders with in-depth experience in health economics and outcomes research (HEOR), evidence assessment, value communications, data analytics, real world evidence, observational research, and private and public payer market access solutions.  Our regulatory-grade proprietary RWD platform enables integrated, real world insights derived from 100 million patients, across all major therapeutic areas.`
+export const ABOUT_US_TEXT = `PhenoVista Biosciences is a trusted discovery partner that combines expertise in high-content imaging with the use of relevant cell models to provide off-the-shelf and bespoke assay services across the drug discovery process.`
 /* eslint-enable max-len */
 
 export const LOGO = {
@@ -19,7 +19,7 @@ export const LOGO = {
   src: logo.src,
 }
 
-export const FOOTER_NAME = 'Beachside Biotechnology Services'
+export const FOOTER_NAME = 'PhenoVista Biosciences'
 
 export const FOOTER_SECTIONS = [
   {
