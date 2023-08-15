@@ -1,4 +1,4 @@
-import logo from '../assets/svg/pv-logo.png'
+import logo from '../assets/svg/pv-logo-white.png'
 import item from '../assets/img/louis-reed-pwcKF7L4-no-unsplash.jpg'
 
 export const DEFAULT_WARE_IMAGE = {
