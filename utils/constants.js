@@ -11,11 +11,11 @@ export const APP_TITLE = 'PhenoVista Biosciences | Digital Storefront'
 export const ABOUT_US_TITLE = 'About Us'
 
 /* eslint-disable max-len */
-export const ABOUT_US_TEXT = `PhenoVista Biosciences is a trusted discovery partner that combines expertise in high-content imaging with the use of relevant cell models to provide off-the-shelf and bespoke assay services across the drug discovery process.`
+export const ABOUT_US_TEXT = `PhenoVista is a leading provider of disease-relevant, in vitro assay services across all areas of biology. Based in San Diego, California, our team of PhD-level scientists work with biopharmaceutical clients around the world to develop and implement high-content, imaging-based assays to meet their preclinical research goals. With our unique and unparalleled combination of cutting-edge cellular models and the latest quantitative-imaging technologies and data-analysis capabilities, we empower our clients with high-quality functional, structural, and mechanistic data to accelerate their discovery of novel therapeutics and vastly improve global health.`
 /* eslint-enable max-len */
 
 export const LOGO = {
-  alt: 'A scientific symbol with a company name',
+  alt: 'A yellow artistic outline drawing next to the word PhenoVista',
   src: logo.src,
 }
 
