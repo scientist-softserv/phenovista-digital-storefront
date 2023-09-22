@@ -8,7 +8,7 @@ import {
   SearchBar,
   TitledTextBox,
 } from '@scientist-softserv/webstore-component-library'
-import hero from '../assets/img/pv-hero.jpg'
+import hero from '../assets/img/pv-hero-image-1280x720.jpg'
 import {
   configureErrors,
   configureServices,
@@ -36,7 +36,7 @@ const Home = () => {
         <link rel='icon' href='favicon.png' />
       </Head>
       <Image
-        alt='DNA chain'
+        alt='Scientific image'
         src={hero.src}
         height={400}
         width='100%'
