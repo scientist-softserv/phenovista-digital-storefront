@@ -35,13 +35,16 @@ const Home = () => {
         <title>{APP_TITLE}</title>
         <link rel='icon' href='favicon.png' />
       </Head>
-      <Image
-        alt='Scientific image'
-        src={hero.src}
-        height={400}
-        width='100%'
-        style={{ objectFit: 'cover' }}
-      />
+      <div className='hero-image'>
+        <Image
+          alt='Scientific image'
+          src={hero.src}
+          height={400}
+          width='100%'
+          style={{ objectFit: 'cover' }}
+        />
+        <div class='hero-text'>WELCOME TO PHENOVISTA'S CLIENT PORTAL</div>
+      </div>
       <div className='container'>
         <SearchBar onSubmit={handleOnSubmit} />
         <TitledTextBox title={ABOUT_US_TITLE} text={ABOUT_US_TEXT} dataCy='about-us-section'/>
