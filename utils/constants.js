@@ -29,18 +29,18 @@ export const FOOTER_SECTIONS = [
         name: 'Privacy Policy',
         url: '/privacy-policy',
       },
-      // {
-      //   name: 'Terms and Conditions',
-      //   url: '/',
-      // },
-      // {
-      //   name: 'Terms of Use',
-      //   url: '/',
-      // },
-      // {
-      //   name: 'Cookie Policy',
-      //   url: '/',
-      // },
+      {
+        name: 'Terms and Conditions',
+        url: '/terms-and-conditions',
+      },
+      {
+        name: 'Terms of Use',
+        url: '/terms-of-use',
+      },
+      {
+        name: 'Cookie Policy',
+        url: '/',
+      },
     ],
   },
   // {
