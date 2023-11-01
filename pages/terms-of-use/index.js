@@ -9,6 +9,7 @@ const TermsOfUse = () => (
 
 export default TermsOfUse
 
+/* eslint-disable max-len, react/no-unescaped-entities */
 const termsOfUse =(
   <div>
     <style type="text/css" dangerouslySetInnerHTML={{__html: "\n    .awlist1 {\n        list-style: none;\n        counter-reset: awlistcounter5_0\n    }\n\n    .awlist1>li:before {\n        content: counter(awlistcounter5_0) ')';\n        counter-increment: awlistcounter5_0\n    }\n" }} />
@@ -143,3 +144,4 @@ const termsOfUse =(
     </div>
   </div>
 )
+/* eslint-enable max-len, react/no-unescaped-entities */

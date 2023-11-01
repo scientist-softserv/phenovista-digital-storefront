@@ -11,6 +11,7 @@ const PrivacyPolicy = () => (
 
 export default PrivacyPolicy
 
+/* eslint-disable max-len */
 const privacyPolicy = (
   <div>
     <div>
@@ -194,7 +195,8 @@ const privacyPolicy = (
       <p style={{marginTop: '0pt', marginBottom: '0pt'}}>San Diego, CA 92121</p>
       <p style={{marginTop: '0pt', marginBottom: '0pt'}}>Tel: (858) 465-9175</p>
       <p style={{marginTop: '0pt', marginBottom: '0pt'}}>Email: <a href="mailto:Contact@PhenoVista.com" style={{textDecoration: 'none'}}><span style={{color: '#0072bc'}}>Contact@PhenoVista.com</span></a></p>
-     <br />
+      <br />
     </div>
   </div>
 )
+/* eslint-enable max-len */
