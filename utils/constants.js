@@ -23,44 +23,64 @@ export const FOOTER_NAME = 'PhenoVista Biosciences'
 
 export const FOOTER_SECTIONS = [
   {
-    header: 'Legal',
+    header: 'Service Offerings',
     links: [
+      {
+        name: 'Imaging & Analysis',
+        url: 'https://phenovista.com/imaging-analysis',
+      },
+      {
+        name: 'Ready-2-Go Assays',
+        url: 'https://phenovista.com/r2g-assay-services',
+      },
+      {
+        name: 'Cell Painting & Screening',
+        url: 'https://phenovista.com/cell-painting-morphology-assay-services',
+      },
+      {
+        name: 'Bespoke Services',
+        url: 'https://phenovista.com/bespoke-assay-services',
+      },
+    ],
+  },
+  {
+    header: 'Research Areas',
+    links: [
+      {
+        name: 'Fibrosis',
+        url: 'https://phenovista.com/fibrosis-assay-services',
+      },
+      {
+        name: 'Neurobiology',
+        url: 'https://phenovista.com/neurobiology-assay-services',
+      },
+      {
+        name: 'Oncology & Immuno-oncology',
+        url: 'https://phenovista.com/oncology-immuno-oncology-assay-services',
+      },
+      {
+        name: 'Cell & Gene Therapy',
+        url: 'https://phenovista.com/cell-and-gene-therapy-assay-services',
+      },
+    ],
+  },
+  {
+    header: 'Helpful Links',
+    links: [
+      {
+        name: 'About Us',
+        url: 'https://phenovista.com/about-us',
+      },
+      {
+        name: 'Expertise',
+        url: 'https://phenovista.com/expertise',
+      },
       {
         name: 'Privacy Policy',
         url: '/privacy-policy',
       },
-      {
-        name: 'Terms and Conditions',
-        url: '/terms-and-conditions',
-      },
-      {
-        name: 'Terms of Use',
-        url: '/terms-of-use',
-      },
-      {
-        name: 'Cookie Policy',
-        url: '/',
-      },
     ],
   },
-  // {
-  //   header: 'Two',
-  //   links: [
-  //     {
-  //       name: 'Contact',
-  //       url: '/contact',
-  //     },
-  //   ],
-  // },
-  // {
-  //   header: 'Three',
-  //   links: [
-  //     {
-  //       name: 'Services',
-  //       url: '/services',
-  //     },
-  //   ],
-  // },
 ]
 
 export const FOOTER_SOCIALS = [
