@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:18-alpine as web
 
 ENV NODE_ENV="production" \
     NEXT_TELEMETRY_DISABLED=1
