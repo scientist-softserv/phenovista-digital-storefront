@@ -43,7 +43,7 @@ const Home = () => {
           width='100%'
           style={{ objectFit: 'cover' }}
         />
-        <div class='hero-text'>{`WELCOME TO PHENOVISTA'S CLIENT PORTAL`}</div>
+        <div class='hero-text'>{`WELCOME TO PHENOVISTA'S WEB STORE`}</div>
       </div>
       <div className='container'>
         <SearchBar onSubmit={handleOnSubmit} />
