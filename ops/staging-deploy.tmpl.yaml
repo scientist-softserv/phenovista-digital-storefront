@@ -1,5 +1,4 @@
-apiTokenConfigSecret: "webstore-staging-api-tokens"
-nextAuthUrl: "https://webstore-staging.notch8.cloud/api/auth"
+nextAuthUrl: "https://phenovista-staging.softserv.cloud/api/auth"
 providerName: "acme"
 providerId: "572"
 scientistApiVersion: "v2"
@@ -27,10 +26,11 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
   }
   hosts:
-    - host: webstore-staging.notch8.cloud
+    - host: phenovista-staging.softserv.cloud
       paths:
         - path: /
+          pathType: ImplementationSpecific
   tls:
     - hosts:
-        - webstore-staging.notch8.cloud
-      secretName: notch8cloud
+        - phenovista-staging.softserv.cloud
+      secretName: softservcloud

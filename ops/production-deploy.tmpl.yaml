@@ -29,6 +29,7 @@ ingress:
     - host: phenovista.softserv.cloud
       paths:
         - path: /
+          pathType: ImplementationSpecific
   tls:
     - hosts:
         - phenovista.softserv.cloud
