@@ -21,6 +21,7 @@ export const LOGO = {
 
 export const FOOTER_NAME = 'PhenoVista Biosciences'
 
+// adding external: true to a link will allow it to open in a new tab.
 export const FOOTER_SECTIONS = [
   {
     header: 'Service Offerings',
@@ -28,18 +29,22 @@ export const FOOTER_SECTIONS = [
       {
         name: 'Imaging & Analysis',
         url: 'https://phenovista.com/imaging-analysis',
+        target: '_blank',
       },
       {
         name: 'Ready-2-Go Assays',
         url: 'https://phenovista.com/r2g-assay-services',
+        target: '_blank',
       },
       {
         name: 'Cell Painting & Screening',
         url: 'https://phenovista.com/cell-painting-morphology-assay-services',
+        target: '_blank',
       },
       {
         name: 'Bespoke Services',
         url: 'https://phenovista.com/bespoke-assay-services',
+        target: '_blank',
       },
     ],
   },
@@ -49,18 +54,22 @@ export const FOOTER_SECTIONS = [
       {
         name: 'Fibrosis',
         url: 'https://phenovista.com/fibrosis-assay-services',
+        target: '_blank',
       },
       {
         name: 'Neurobiology',
         url: 'https://phenovista.com/neurobiology-assay-services',
+        target: '_blank',
       },
       {
         name: 'Oncology & Immuno-oncology',
         url: 'https://phenovista.com/oncology-immuno-oncology-assay-services',
+        target: '_blank',
       },
       {
         name: 'Cell & Gene Therapy',
         url: 'https://phenovista.com/cell-and-gene-therapy-assay-services',
+        target: '_blank',
       },
     ],
   },
@@ -70,10 +79,12 @@ export const FOOTER_SECTIONS = [
       {
         name: 'About Us',
         url: 'https://phenovista.com/about-us',
+        target: '_blank',
       },
       {
         name: 'Expertise',
         url: 'https://phenovista.com/expertise',
+        target: '_blank',
       },
       {
         name: 'Privacy Policy',
