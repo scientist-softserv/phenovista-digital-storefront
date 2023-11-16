@@ -6,8 +6,11 @@ nextPublicToken: $NEXT_PUBLIC_TOKEN
 nextAuthSecret: $NEXTAUTH_SECRET
 clientSecret: $CLIENT_SECRET
 clientId: $CLIENT_ID
-# TODO: ref: https://github.com/scientist-softserv/phenovista-digital-storefront/issues/21
-# sentryDsn: ''
+sentryAuthToken: $SENTRY_AUTH_TOKEN
+sentryDsn: 'https://8e15464aee1fdfc31f70ed416c6bfdc9@o1008683.ingest.sentry.io/4506236741025792'
+sentryOrg: 'scientist-inc'
+sentryProject: 'phenovista'
+sentryUrl: 'https://sentry.io/'
 replicaCount: 1
 
 image:
