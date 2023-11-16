@@ -21,7 +21,7 @@ export const LOGO = {
 
 export const FOOTER_NAME = 'PhenoVista Biosciences'
 
-// adding target: '_blank' to a link will allow it to open in a new tab.
+// adding target: '_blank' to a link will allow it to open in a new tab
 export const FOOTER_SECTIONS = [
   {
     header: 'Service Offerings',
