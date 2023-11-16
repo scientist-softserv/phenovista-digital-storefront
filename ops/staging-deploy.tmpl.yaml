@@ -1,17 +1,19 @@
-nextAuthUrl: "https://phenovista-staging.softserv.cloud/api/auth"
-providerName: "phenovista"
-providerId: "12527"
-scientistApiVersion: "v2"
-nextPublicToken: $NEXT_PUBLIC_TOKEN
-nextAuthSecret: $NEXTAUTH_SECRET
-clientSecret: $CLIENT_SECRET
+appBaseUrl: 'https://phenovista.softserv.cloud'
 clientId: $CLIENT_ID
+clientSecret: $CLIENT_SECRET
+nextAuthSecret: $NEXTAUTH_SECRET
+nextAuthUrl: "https://phenovista-staging.softserv.cloud/api/auth"
+nextPublicToken: $NEXT_PUBLIC_TOKEN
+providerId: "12527"
+providerName: "phenovista"
+replicaCount: 1
+scientistApiVersion: "v2"
 sentryAuthToken: $SENTRY_AUTH_TOKEN
 sentryDsn: 'https://8e15464aee1fdfc31f70ed416c6bfdc9@o1008683.ingest.sentry.io/4506236741025792'
 sentryOrg: 'scientist-inc'
 sentryProject: 'phenovista'
 sentryUrl: 'https://sentry.io/'
-replicaCount: 1
+webhookUrl: 'http://ss-mailer/webstore'
 
 image:
   repository: ghcr.io/scientist-softserv/webstore
