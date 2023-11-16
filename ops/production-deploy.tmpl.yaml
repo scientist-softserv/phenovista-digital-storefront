@@ -1,12 +1,13 @@
 nextAuthUrl: "https://phenovista.softserv.cloud/api/auth"
-providerName: "acme"
-providerId: "572"
+providerName: "phenovista"
+providerId: "12527"
 scientistApiVersion: "v2"
 nextPublicToken: $NEXT_PUBLIC_TOKEN
 nextAuthSecret: $NEXTAUTH_SECRET
 clientSecret: $CLIENT_SECRET
 clientId: $CLIENT_ID
-sentryDsn: 'https://78ce09ae2f694f0e8981cf5cec6fc2c7@o1008683.ingest.sentry.io/4504810271408128'
+# TODO: ref: https://github.com/scientist-softserv/phenovista-digital-storefront/issues/21
+# sentryDsn: ''
 replicaCount: 1
 
 image:
