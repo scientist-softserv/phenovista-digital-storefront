@@ -1,4 +1,4 @@
-nextAuthUrl: "https://phenovista-staging.softserv.cloud/api/auth"
+nextAuthUrl: "https://phenovista.softserv.cloud/api/auth"
 providerName: "acme"
 providerId: "572"
 scientistApiVersion: "v2"
@@ -26,11 +26,11 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
   }
   hosts:
-    - host: phenovista-staging.softserv.cloud
+    - host: phenovista.softserv.cloud
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls:
     - hosts:
-        - phenovista-staging.softserv.cloud
+        - phenovista.softserv.cloud
       secretName: softservcloud
