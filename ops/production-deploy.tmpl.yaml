@@ -16,7 +16,7 @@ sentryUrl: 'https://sentry.io/'
 webhookUrl: 'http://ss-mailer/webstore'
 
 image:
-  repository: ghcr.io/scientist-softserv/webstore
+  repository: ghcr.io/scientist-softserv/phenovista-digital-storefront
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   # tag: '0.0.2'
