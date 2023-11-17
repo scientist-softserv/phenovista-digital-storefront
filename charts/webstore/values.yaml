@@ -10,13 +10,25 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: '0.0.2'
 
+appBaseUrl: ''
+clientId: ''
+clientSecret: ''
 fullnameOverride: ''
 imagePullSecrets: []
 nameOverride: ''
+nextAuthSecret: ''
 nextAuthUrl: ''
+nextPublicToken: ''
 providerId: ''
 providerName: ''
+replicaCount: ''
 scientistApiVersion: ''
+sentryAuthToken: ''
+sentryDsn: ''
+sentryOrg: ''
+sentryProject: ''
+sentryUrl: ''
+webhookUrl: ''
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -46,7 +58,7 @@ service:
 
 ingress:
   enabled: false
-  className: ""
+  className: ''
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
