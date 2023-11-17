@@ -18,13 +18,13 @@ module.exports = defineConfig({
         ...process.env,
         ...config.env
       }
-      return config 
+      return config
     },
   },
   env: {
     TEST_SCIENTIST_USER: 'test@test.com',
     TEST_SCIENTIST_PW: '!test1234',
-    NEXT_PUBLIC_PROVIDER_NAME: 'acme',
-    NEXT_PUBLIC_PROVIDER_ID: '572'
+    NEXT_PUBLIC_PROVIDER_NAME: 'phenovista',
+    NEXT_PUBLIC_PROVIDER_ID: '12527'
   },
 });

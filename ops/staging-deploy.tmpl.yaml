@@ -1,28 +1,34 @@
-nextAuthUrl: "https://phenovista-staging.softserv.cloud/api/auth"
-providerName: "acme"
-providerId: "572"
-scientistApiVersion: "v2"
-nextPublicToken: $NEXT_PUBLIC_TOKEN
-nextAuthSecret: $NEXTAUTH_SECRET
-clientSecret: $CLIENT_SECRET
+appBaseUrl: 'https://phenovista.softserv.cloud'
 clientId: $CLIENT_ID
-sentryDsn: 'https://78ce09ae2f694f0e8981cf5cec6fc2c7@o1008683.ingest.sentry.io/4504810271408128'
+clientSecret: $CLIENT_SECRET
+nextAuthSecret: $NEXTAUTH_SECRET
+nextAuthUrl: 'https://phenovista-staging.softserv.cloud/api/auth'
+nextPublicToken: $NEXT_PUBLIC_TOKEN
+providerId: '12527'
+providerName: 'phenovista'
 replicaCount: 1
+scientistApiVersion: 'v2'
+sentryAuthToken: $SENTRY_AUTH_TOKEN
+sentryDsn: 'https://8e15464aee1fdfc31f70ed416c6bfdc9@o1008683.ingest.sentry.io/4506236741025792'
+sentryOrg: 'scientist-inc'
+sentryProject: 'phenovista'
+sentryUrl: 'https://sentry.io/'
+webhookUrl: 'http://ss-mailer/webstore'
 
 image:
-  repository: ghcr.io/scientist-softserv/webstore
+  repository: ghcr.io/scientist-softserv/phenovista-digital-storefront
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  # tag: "0.0.2"
+  # tag: '0.0.2'
 
 imagePullSecrets:
   - name: github
 
 ingress:
   enabled: true
-  className: "nginx"
+  className: 'nginx'
   annotations: {
-    nginx.ingress.kubernetes.io/proxy-body-size: "0",
+    nginx.ingress.kubernetes.io/proxy-body-size: '0',
     cert-manager.io/cluster-issuer: letsencrypt-prod
   }
   hosts:

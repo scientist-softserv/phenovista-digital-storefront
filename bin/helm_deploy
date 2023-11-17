@@ -16,7 +16,7 @@ fi
 release_name="${1}"
 namespace="${2}"
 
-DEPLOY_IMAGE="${DEPLOY_IMAGE:-ghcr.io/scientist-softserv/webstore}"
+DEPLOY_IMAGE="${DEPLOY_IMAGE:-ghcr.io/scientist-softserv/phenovista-digital-storefront}"
 DEPLOY_TAG="${DEPLOY_TAG:-latest}"
 
 helm upgrade \
