@@ -2,12 +2,12 @@ appBaseUrl: 'https://phenovista.softserv.cloud'
 clientId: $CLIENT_ID
 clientSecret: $CLIENT_SECRET
 nextAuthSecret: $NEXTAUTH_SECRET
-nextAuthUrl: "https://phenovista.softserv.cloud/api/auth"
+nextAuthUrl: 'https://phenovista.softserv.cloud/api/auth'
 nextPublicToken: $NEXT_PUBLIC_TOKEN
-providerId: "12527"
-providerName: "phenovista"
+providerId: '12527'
+providerName: 'phenovista'
 replicaCount: 1
-scientistApiVersion: "v2"
+scientistApiVersion: 'v2'
 sentryAuthToken: $SENTRY_AUTH_TOKEN
 sentryDsn: 'https://8e15464aee1fdfc31f70ed416c6bfdc9@o1008683.ingest.sentry.io/4506236741025792'
 sentryOrg: 'scientist-inc'
@@ -19,16 +19,16 @@ image:
   repository: ghcr.io/scientist-softserv/webstore
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  # tag: "0.0.2"
+  # tag: '0.0.2'
 
 imagePullSecrets:
   - name: github
 
 ingress:
   enabled: true
-  className: "nginx"
+  className: 'nginx'
   annotations: {
-    nginx.ingress.kubernetes.io/proxy-body-size: "0",
+    nginx.ingress.kubernetes.io/proxy-body-size: '0',
     cert-manager.io/cluster-issuer: letsencrypt-prod
   }
   hosts:

@@ -8,15 +8,15 @@ image:
   repository: ghcr.io/scientist-softserv/webstore
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.0.2"
+  tag: '0.0.2'
 
+fullnameOverride: ''
 imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
-nextAuthUrl: ""
-providerName: ""
-providerId: ""
-scientistApiVersion: ""
+nameOverride: ''
+nextAuthUrl: ''
+providerId: ''
+providerName: ''
+scientistApiVersion: ''
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -25,7 +25,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: ""
+  name: ''
 
 podAnnotations: {}
 
