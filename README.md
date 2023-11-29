@@ -104,7 +104,7 @@ curl -X POST -H 'Authorization: Basic THISISAREALLYLONGALPHANUMERICSTRING' -d 'g
 The curl command will return a JSON object that has an `access_token` property. Store the value of that property as shown below:
 
 ``` bash
-# .env.local
+# .env.development
 NEXT_PUBLIC_TOKEN
 ```
 
