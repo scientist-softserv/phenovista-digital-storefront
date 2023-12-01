@@ -1,4 +1,4 @@
-appBaseUrl: 'https://phenovista.softserv.cloud'
+appBaseUrl: 'https://phenovista-staging.softserv.cloud'
 clientId: $CLIENT_ID
 clientSecret: $CLIENT_SECRET
 nextAuthSecret: $NEXTAUTH_SECRET
