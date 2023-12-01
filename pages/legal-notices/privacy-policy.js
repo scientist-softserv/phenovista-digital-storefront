@@ -5,7 +5,7 @@ const PrivacyPolicy = () => (
   <div className='container'>
     <Title title='PhenoVista Privacy Policy' style={{ marginTop: '1rem'}} />
     {privacyPolicy}
-    <p>View the <Link href='/privacy-policy/scientist-privacy-policy'>Scientist.com Global Privacy Policy</Link></p>
+    <p>View the <Link href='/legal-notices/scientist-privacy-policy'>Scientist.com Global Privacy Policy</Link></p>
   </div>
 )
 

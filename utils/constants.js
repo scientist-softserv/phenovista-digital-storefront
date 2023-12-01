@@ -21,7 +21,7 @@ export const LOGO = {
 
 export const FOOTER_NAME = 'PhenoVista Biosciences'
 
-// adding external: true to a link will allow it to open in a new tab.
+// adding target: '_blank' to a link will allow it to open in a new tab.
 export const FOOTER_SECTIONS = [
   {
     header: 'Service Offerings',
@@ -88,7 +88,7 @@ export const FOOTER_SECTIONS = [
       },
       {
         name: 'Privacy Policy',
-        url: '/privacy-policy',
+        url: '/legal-notices/privacy-policy',
       },
     ],
   },
@@ -106,6 +106,25 @@ export const FOOTER_SOCIALS = [
   {
     icon: 'facebook',
     url: 'www.facebook.com',
+  },
+]
+
+export const LEGAL_NOTICES = [
+  {
+    name: 'Cookie Policy',
+    url: 'legal-notices/cookie-policy',
+  },
+  {
+    name: 'Privacy Policy',
+    url: 'legal-notices/privacy-policy',
+  },
+  {
+    name: 'Terms and Conditions',
+    url: 'legal-notices/terms-and-conditions',
+  },
+  {
+    name: 'Terms of Use',
+    url: 'legal-notices/terms-of-use',
   },
 ]
 
@@ -151,6 +170,8 @@ export const FEATURED_SERVICE_PATH = '/requests/new'
 // this amount, listed in milliseconds, represents when the access token will expire
 // the default is 1 week
 export const EXPIRATION_DURATION = 604800000
+
+export const API_PER_PAGE = 2000
 
 export const WEBHOOK_EVENTS = {
   'signer': {
