@@ -1,5 +1,5 @@
 import logo from '../assets/svg/pv-logo-white.png'
-import item from '../assets/img/louis-reed-pwcKF7L4-no-unsplash.jpg'
+import item from '../assets/img/microscope.png'
 
 export const DEFAULT_WARE_IMAGE = {
   src: item.src,

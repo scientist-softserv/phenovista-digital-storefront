@@ -23,7 +23,11 @@ const Home = () => {
   const router = useRouter()
   const { data: session } = useSession()
   const { wares, isLoading, isError } = useAllWares(session?.accessToken)
-  const DESIRED_SERVICES = ['Ready-2-Go Lung Fibrosis Assay Service', 'Ready-2-Go Neurite Network Dynamics Assay Service', 'Custom Assay Services']
+  const DESIRED_SERVICES = [
+    'Ready-2-Go Lung Fibrosis Assay Service',
+    'Ready-2-Go Neurite Network Dynamics Assay Service',
+    'Custom Assay Services'
+  ]
   const filteredServices = wares?.filter(ware => DESIRED_SERVICES.includes(ware.name))
   const featuredServices = configureServices({ data: filteredServices, path: FEATURED_SERVICE_PATH })
   const handleOnSubmit = ({ value }) => router.push(
