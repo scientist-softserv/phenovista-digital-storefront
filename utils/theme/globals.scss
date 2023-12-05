@@ -41,3 +41,9 @@ footer {
   transform: translate(-50%, -50%);
   font-size: 30px;
 }
+
+// override wcl v0.1.19
+.card > .cover {
+  object-fit: contain;
+  padding: 20px;
+}
