@@ -43,7 +43,12 @@ footer {
 }
 
 // override wcl v0.1.19
-.card > .cover {
+.card > img.cover,
+.card img.cover {
   object-fit: contain;
   padding: 20px;
+}
+
+.card .col-3 {
+  height: 170px;
 }
