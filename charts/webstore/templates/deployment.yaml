@@ -38,6 +38,8 @@ spec:
               value: "{{ .Values.clientSecret }}"
             - name: CLIENT_ID
               value: "{{ .Values.clientId }}"
+            - name: GOOGLE_TAG_MANAGER_ID
+              value: "{{ .Values.googleTagManagerId }}"
             - name: NEXTAUTH_SECRET
               value: "{{ .Values.nextAuthSecret }}"
             - name: NEXTAUTH_URL
