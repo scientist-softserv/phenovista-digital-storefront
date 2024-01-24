@@ -41,7 +41,7 @@ const WebStore = ({ Component }) => {
         enableCookies={enableCookies}
         getCookieConsent={getCookieConsent()}
       /> */}
-      <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID} />
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID} />
       <Header
         auth={{
           signIn: () => signIn(process.env.NEXT_PUBLIC_PROVIDER_NAME),
