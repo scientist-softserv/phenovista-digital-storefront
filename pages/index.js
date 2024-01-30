@@ -28,6 +28,7 @@ const Home = () => {
     'Ready-2-Go Neurite Network Dynamics Assay Service',
     'Custom Assay Services'
   ]
+  const searchPlaceholder = 'Search for a service e.g., cell painting, lung fibrosis, custom assays, etc.'
   const filteredServices = wares?.filter(ware => DESIRED_SERVICES.includes(ware.name))
   const featuredServices = configureServices({ data: filteredServices, path: FEATURED_SERVICE_PATH })
   const handleOnSubmit = ({ value }) => router.push(
@@ -52,7 +53,10 @@ const Home = () => {
         <div class='hero-text'>{`WELCOME TO PHENOVISTA'S WEB STORE`}</div>
       </div>
       <div className='container'>
-        <SearchBar onSubmit={handleOnSubmit} />
+        <SearchBar 
+          onSubmit={handleOnSubmit}
+          placeholder={searchPlaceholder}
+        />
         <TitledTextBox title={ABOUT_US_TITLE} text={ABOUT_US_TEXT} dataCy='about-us-section'/>
         {isError ? (
           <Notice
