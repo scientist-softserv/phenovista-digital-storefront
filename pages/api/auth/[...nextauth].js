@@ -11,7 +11,7 @@ const authOptions = {
       id: process.env.NEXT_PUBLIC_PROVIDER_NAME,
       name: process.env.NEXT_PUBLIC_PROVIDER_NAME,
       type: 'oauth',
-      checks: ['pkce', 'state'],
+      checks: ['pkce'],
       clientId: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
       authorization: `https://${process.env.NEXT_PUBLIC_PROVIDER_NAME}.scientist.com/oauth/authorize`,
