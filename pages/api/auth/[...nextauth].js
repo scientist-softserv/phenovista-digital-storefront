@@ -31,10 +31,10 @@ const authOptions = {
   callbacks: {
     async redirect({ url, baseUrl, ...props }) {
       console.log({
-        url, baseUrl, client_url: process.env.NEXT_PUBLIC_CLIENT_BASE_URL,
+        url, baseUrl, clientUrl: process.env.NEXT_PUBLIC_CLIENT_BASE_URL,
         url_Origin: new URL(url).origin,
         baseUrl_Origin: new URL(baseUrl).origin,
-        clientUrl_Origin: new URL(process.env.NEXT_PUBLIC_CLIENT_BASE_URL).origin,
+        // clientUrl_Origin: new URL(clientUrl).origin,
         ...props,
       })
       if (url.startsWith("/")) return `${baseUrl}${url}`
