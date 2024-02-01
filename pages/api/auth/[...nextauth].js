@@ -29,13 +29,14 @@ const authOptions = {
     }
   ],
   callbacks: {
-    async redirect({ url, baseUrl }, ...props) {
+    async redirect({ url, baseUrl, ...props }) {
       console.log({
         url, baseUrl, client_url: process.env.NEXT_PUBLIC_CLIENT_BASE_URL,
         url_Origin: new URL(url).origin,
         baseUrl_Origin: new URL(baseUrl).origin,
         clientUrl_Origin: new URL(process.env.NEXT_PUBLIC_CLIENT_BASE_URL).origin,
         ...props,
+      })
       return baseUrl
     },
     async jwt({ token, account, user }) {
