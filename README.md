@@ -48,6 +48,7 @@ _The terms "client" and "provider" are fairly interchangeable in this applicatio
 | NEXTAUTH_SECRET | Yes | .env.development | Used to encrypt the NextAuth.js JWT |
 | NEXTAUTH_URL | Yes | .env.development | The authentication route used for NextAuth.js |
 | NEXT_PUBLIC_APP_BASE_URL | Yes | .env | The URL to the deployed webstore instance |
+| NEXT_PUBLIC_CLIENT_BASE_URL | No | .env | The URL to the Client CNAME that points at NEXT_PUBLIC_APP_BASE_URL |
 | NEXT_PUBLIC_PROVIDER_ID | Yes | .env | The identifier of the client's marketplace in the database |
 | NEXT_PUBLIC_PROVIDER_NAME | Yes | .env | The subdomain of the client's marketplace |
 | NEXT_PUBLIC_SCIENTIST_API_VERSION | Yes | .env | The version of the API we should be talking to |
