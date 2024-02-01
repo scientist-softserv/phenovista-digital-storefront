@@ -50,7 +50,7 @@ const Home = () => {
           width='100%'
           style={{ objectFit: 'cover' }}
         />
-        <div class='hero-text'>{`WELCOME TO PHENOVISTA'S WEB STORE`}</div>
+        <div class='hero-text'>{`Empowering Discovery: Advanced Imaging Assays for Next-Generation Therapeutics`}</div>
       </div>
       <div className='container'>
         <SearchBar 
