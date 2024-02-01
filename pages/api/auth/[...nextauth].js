@@ -37,6 +37,8 @@ const authOptions = {
         clientUrl_Origin: new URL(process.env.NEXT_PUBLIC_CLIENT_BASE_URL).origin,
         ...props,
       })
+      if (url.startsWith("/")) return `${baseUrl}${url}`
+      else if (new URL(url).origin === baseUrl) return url
       return baseUrl
     },
     async jwt({ token, account, user }) {
