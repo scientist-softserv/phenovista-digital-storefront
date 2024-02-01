@@ -1,7 +1,7 @@
 import { Title } from '@scientist-softserv/webstore-component-library'
 
 const TermsAndConditions = () => (
-  <div class='container'>
+  <div className='container'>
     <Title title='Terms and Conditions For Purchase' style={{ marginTop: '1rem'}} />
     {termsAndConditions}
   </div>
