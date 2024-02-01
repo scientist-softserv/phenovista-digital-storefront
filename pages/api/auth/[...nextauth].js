@@ -29,17 +29,11 @@ const authOptions = {
     }
   ],
   callbacks: {
-    async redirect({ url, baseUrl, ...props }) {
+    async redirect({ url, baseUrl }) {
       console.log({
         url, baseUrl, clientUrl: process.env.NEXT_PUBLIC_CLIENT_BASE_URL,
-        url_Origin: new URL(url).origin,
-        baseUrl_Origin: new URL(baseUrl).origin,
-        // clientUrl_Origin: new URL(clientUrl).origin,
-        ...props,
       })
-      if (url.startsWith("/")) return `${baseUrl}${url}`
-      else if (new URL(url).origin === baseUrl) return url
-      return baseUrl
+      return url
     },
     async jwt({ token, account, user }) {
       // Triggered on the initial sign in
