@@ -24,9 +24,9 @@ const Home = () => {
   const { data: session } = useSession()
   const { wares, isLoading, isError } = useAllWares(session?.accessToken)
   const DESIRED_SERVICES = [
+    'Cell Painting Services',
     'Ready-2-Go Lung Fibrosis Assay Service',
     'Ready-2-Go Neurite Network Dynamics Assay Service',
-    'Custom Assay Services'
   ]
   const searchPlaceholder = 'Search for a service e.g., cell painting, lung fibrosis, custom assays, etc.'
   const filteredServices = wares?.filter(ware => DESIRED_SERVICES.includes(ware.name))
@@ -53,7 +53,7 @@ const Home = () => {
         <div class='hero-text'>{`Empowering Discovery: Advanced Imaging Assays for Next-Generation Therapeutics`}</div>
       </div>
       <div className='container'>
-        <SearchBar 
+        <SearchBar
           onSubmit={handleOnSubmit}
           placeholder={searchPlaceholder}
         />
