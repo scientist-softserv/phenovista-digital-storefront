@@ -11,11 +11,11 @@ export const getWebhookConfig = async (accessToken) => {
 export const createWebhookConfig = (accessToken) => {
   /* eslint-disable camelcase */
   const webhook_config = {
-    'name': 'Webstore',
+    'name': 'PhenoVista Digital Storefront',
     'url': `${process.env.NEXT_PUBLIC_WEBHOOK_URL}`,
     'active': true,
     'params': {
-      'base_url': `${process.env.NEXT_PUBLIC_APP_BASE_URL}`
+      'base_url': `${process.env.NEXT_PUBLIC_CLIENT_BASE_URL}`
     },
     'all_events': true,
     // TODO(alishaevn): attempt to use the below again when https://github.com/assaydepot/scientist_api_v2/pull/248
