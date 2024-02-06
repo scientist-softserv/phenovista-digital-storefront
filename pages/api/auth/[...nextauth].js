@@ -53,9 +53,8 @@ const authOptions = {
         url, baseUrl, clientUrl, urlPathname,
       })
 
-      // if (new URL(url).origin === process.env.NEXT_PUBLIC_CLIENT_BASE_URL) return `${clientUrl}${urlPathname}`
-      // return baseUrl
-      return `${clientUrl}${urlPathname}`
+      if (new URL(url).origin === process.env.NEXT_PUBLIC_CLIENT_BASE_URL) return `${clientUrl}${urlPathname}`
+      return url
 
       /**
        * {
