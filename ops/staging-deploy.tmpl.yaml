@@ -1,5 +1,5 @@
 appBaseUrl: 'https://phenovista-staging.softserv.cloud'
-clientBaseUrl: ''
+clientBaseUrl: 'https://phenovista-test.vercel.app'
 clientId: $CLIENT_ID
 clientSecret: $CLIENT_SECRET
 googleTagManagerId: ''
