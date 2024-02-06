@@ -49,6 +49,7 @@ const authOptions = {
       */
       console.log({
         url, baseUrl, clientUrl: process.env.NEXT_PUBLIC_CLIENT_BASE_URL,
+        urlPathname: new URL(url).pathname, baseUrlPathname: new URL(baseUrl).pathname,
       })
 
       // if (new URL(url).origin === process.env.NEXT_PUBLIC_CLIENT_BASE_URL) return url

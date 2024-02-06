@@ -5,6 +5,7 @@ import {
   ItemLoading,
   Notice,
   SearchBar,
+  Title,
 } from '@scientist-softserv/webstore-component-library'
 import {
   buttonBg,
@@ -49,6 +50,7 @@ const Browse = ({ session }) => {
   return (
     <div className='container'>
       <SearchBar onSubmit={handleOnSubmit} initialValue={existingQuery} />
+      <Title title='this is a test!' />
       {isLoading
         ? (
           <>
