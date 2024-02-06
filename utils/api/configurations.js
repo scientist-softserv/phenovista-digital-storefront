@@ -324,9 +324,9 @@ export const configureDynamicFormUiSchema = (schema, defaultOptions) => {
         case 'checkbox':
           fieldOptions['ui:widget'] = 'checkboxes'
           break
-        // case 'radio':
-        //   fieldOptions['ui:widget'] = 'radio'
-        //   break
+        case 'radio':
+          fieldOptions['ui:widget'] = 'radio'
+          break
         default:
           fieldOptions['ui:inputType'] = fields[key].type
         }
