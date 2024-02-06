@@ -47,12 +47,13 @@ const authOptions = {
        * and what it expected.
        * ref: https://github.com/nextauthjs/next-auth/discussions/7491#discussioncomment-6166539
       */
+     const clientUrl = process.env.NEXT_PUBLIC_CLIENT_BASE_URL
+     const urlPathname = new URL(url).pathname
       console.log({
-        url, baseUrl, clientUrl: process.env.NEXT_PUBLIC_CLIENT_BASE_URL,
-        urlPathname: new URL(url).pathname, baseUrlPathname: new URL(baseUrl).pathname,
+        url, baseUrl, clientUrl, urlPathname,
       })
 
-      // if (new URL(url).origin === process.env.NEXT_PUBLIC_CLIENT_BASE_URL) return url
+      if (new URL(url).origin === process.env.NEXT_PUBLIC_CLIENT_BASE_URL) return `${clientUrl}${urlPathname}`
       // return baseUrl
       return url
 
