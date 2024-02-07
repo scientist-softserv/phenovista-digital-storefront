@@ -1,10 +1,10 @@
-appBaseUrl: 'https://phenovista.softserv.cloud'
+appBaseUrl: 'https://store.phenovista.com'
 clientBaseUrl: 'https://store.phenovista.com'
 clientId: $CLIENT_ID
 clientSecret: $CLIENT_SECRET
 googleTagManagerId: 'GTM-PQGCP24G'
 nextAuthSecret: $NEXTAUTH_SECRET
-nextAuthUrl: 'https://phenovista.softserv.cloud/api/auth'
+nextAuthUrl: 'https://store.phenovista.com/api/auth'
 nextPublicToken: $NEXT_PUBLIC_TOKEN
 providerId: '12527'
 providerName: 'phenovista'
