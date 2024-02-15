@@ -181,7 +181,7 @@ const NewRequest = ({ session }) => {
         {dynamicForm.schema ? (
           <>
             <TextBox
-              text={ware.snippet}
+              text={ware?.snippet}
               size='large'
               style={{ fontWeight: '550' }}
             />
