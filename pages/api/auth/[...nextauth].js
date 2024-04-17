@@ -2,6 +2,7 @@ import NextAuth from 'next-auth'
 import axios from 'axios'
 // TODO(alishaevn): use the api value from https://github.com/assaydepot/rx/issues/21497 in the next phase
 import { EXPIRATION_DURATION, getWebhookConfig, createWebhookConfig } from '../../../utils'
+const authorizationDomain = process.env.NEXT_PUBLIC_CLIENT_DOMAIN || 'scientist.com'
 
 // For more information on each option (and a full list of options) go to: https://next-auth.js.org/configuration/options
 const authOptions = {
@@ -14,8 +15,8 @@ const authOptions = {
       checks: ['pkce', 'state'],
       clientId: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      authorization: `https://${process.env.NEXT_PUBLIC_PROVIDER_NAME}.scientist.com/oauth/authorize`,
-      token: `https://${process.env.NEXT_PUBLIC_PROVIDER_NAME}.scientist.com/oauth/token`,
+      authorization: `https://${process.env.NEXT_PUBLIC_PROVIDER_NAME}.${authorizationDomain}/oauth/authorize`,
+      token: `https://${process.env.NEXT_PUBLIC_PROVIDER_NAME}.${authorizationDomain}/oauth/token`,
       userinfo: {
         // The result of this function will be the input to the `profile` callback.
         async request(context) {
@@ -68,7 +69,7 @@ const authOptions = {
  */
 const refreshAccessToken = async (token) => {
   try {
-    const url = `https://${process.env.NEXT_PUBLIC_PROVIDER_NAME}.scientist.com/oauth/token`
+    const url = `https://${process.env.NEXT_PUBLIC_PROVIDER_NAME}.${authorizationDomain}/oauth/token`
     const encodedString = Buffer.from(`${process.env.CLIENT_ID}:${process.env.CLIENT_SECRET}`).toString('base64')
     const params = new URLSearchParams({
       /* eslint-disable camelcase */
