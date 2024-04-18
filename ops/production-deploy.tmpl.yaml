@@ -1,4 +1,5 @@
 appBaseUrl: 'https://store.phenovista.com'
+clientDomain: 'assayexpress.com'
 clientId: $CLIENT_ID
 clientSecret: $CLIENT_SECRET
 googleTagManagerId: 'GTM-PQGCP24G'
