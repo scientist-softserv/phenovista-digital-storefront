@@ -43,12 +43,12 @@ _The terms "client" and "provider" are fairly interchangeable in this applicatio
 
 | Name | Required | Location | Description |
 | ------------- | ------------- | ------------- | ------------- |
+| CLIENT_DOMAIN | No | .env.development | The domain attached to the Client App. Ref: Creating The Marketplace App |
 | CLIENT_ID | Yes | .env.development | The identifier of the client's marketplace application |
 | CLIENT_SECRET | Yes | .env.development | The secret related to the client's marketplace application |
 | NEXTAUTH_SECRET | Yes | .env.development | Used to encrypt the NextAuth.js JWT |
 | NEXTAUTH_URL | Yes | .env.development | The authentication route used for NextAuth.js |
 | NEXT_PUBLIC_APP_BASE_URL | Yes | .env | The URL to the deployed webstore instance |
-| NEXT_PUBLIC_CLIENT_DOMAIN | No | .env.development | The domain attached to the Client App. Ref: Creating The Marketplace App |
 | NEXT_PUBLIC_PROVIDER_ID | Yes | .env | The identifier of the client's marketplace in the database |
 | NEXT_PUBLIC_PROVIDER_NAME | Yes | .env | The subdomain of the client's marketplace |
 | NEXT_PUBLIC_SCIENTIST_API_VERSION | Yes | .env | The version of the API we should be talking to |
@@ -61,7 +61,7 @@ _The terms "client" and "provider" are fairly interchangeable in this applicatio
 | SENTRY_URL | No | .env.development | The base URL of the Sentry instance |
 
 ### Creating The Marketplace App
-Ensure that a marketplace, e.g. client-name.<NEXT_PUBLIC_CLIENT_DOMAIN>.com, has been created by the Scientist.com Professional Services team. Once that exists, an application needs to be created on that marketplace by a developer with the proper permissions. This is how some of the environment variables are created. You'll know if you have the proper developer permissions if once logged in on the client marketplace, you can hover over your avatar and see "Applications" underneath the "Developer" settings. _If you don't have the permissions, you need to request them, or ask someone with the permissions to complete the steps below._
+Ensure that a marketplace, e.g. client-name.<CLIENT_DOMAIN>.com, has been created by the Scientist.com Professional Services team. Once that exists, an application needs to be created on that marketplace by a developer with the proper permissions. This is how some of the environment variables are created. You'll know if you have the proper developer permissions if once logged in on the client marketplace, you can hover over your avatar and see "Applications" underneath the "Developer" settings. _If you don't have the permissions, you need to request them, or ask someone with the permissions to complete the steps below._
 - Once you've clicked the "Applications" link mentioned above, press "New Application"
   - Only the application name is required for the moment. Name it the same as the provider name.
 - Save, and you should be redirected to the "Developer Details" page

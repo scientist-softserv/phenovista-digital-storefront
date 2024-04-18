@@ -2,7 +2,7 @@ import NextAuth from 'next-auth'
 import axios from 'axios'
 // TODO(alishaevn): use the api value from https://github.com/assaydepot/rx/issues/21497 in the next phase
 import { EXPIRATION_DURATION, getWebhookConfig, createWebhookConfig } from '../../../utils'
-const authorizationDomain = process.env.NEXT_PUBLIC_CLIENT_DOMAIN || 'scientist.com'
+const authorizationDomain = process.env.CLIENT_DOMAIN || 'scientist.com'
 
 // For more information on each option (and a full list of options) go to: https://next-auth.js.org/configuration/options
 const authOptions = {
