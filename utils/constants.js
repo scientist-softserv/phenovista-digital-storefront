@@ -130,7 +130,7 @@ export const LEGAL_NOTICES = [
 
 export const STATUS_ARRAY = [
   {
-    statusLabel: 'Supplier Review',
+    statusLabel: 'Under Review',
     statusIcon: 'fa-list-check',
   },
   {
