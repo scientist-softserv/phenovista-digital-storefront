@@ -148,7 +148,7 @@ export const configureStatus = (status) => {
     break
 
   default:
-    status = 'Supplier Review'
+    status = 'Under Review'
   }
 
   return status

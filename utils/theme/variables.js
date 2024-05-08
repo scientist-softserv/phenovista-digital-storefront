@@ -24,7 +24,7 @@ export const statusBarBg = 'light'
 
 // These are the colors used for the request and document statuses
 export const statusColors = {
-  'Supplier Review': {
+  'Under Review': {
     bg: primary,
     text: white,
   },
