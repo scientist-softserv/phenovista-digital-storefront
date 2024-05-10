@@ -50,7 +50,7 @@ const Home = () => {
           width='100%'
           style={{ objectFit: 'cover' }}
         />
-        <div className='hero-text'>{`Empowering Discovery: Advanced Imaging Assays for Next-Generation Therapeutics`}</div>
+        <div className='hero-text'>{`De-risk R&D decisions and increase the likelihood of successful, first-in-class, drug candidates`}</div>
       </div>
       <div className='container'>
         <SearchBar
