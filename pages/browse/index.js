@@ -65,7 +65,7 @@ const Browse = ({ session }) => {
             {(services.length > 0) ? (
               <>
                 {services.map(service => {
-                  const { truncated, cutOffIndex } = truncateDescription(service?.description, 300, open)
+                  const { truncated, cutOffIndex } = truncateDescription(service?.description, service?.description.length, open)
                   return (
                     <Item
                       key={service.id}
@@ -79,6 +79,7 @@ const Browse = ({ session }) => {
                           {service?.description?.slice(cutOffIndex).trimStart()}
                         </Markdown>
                       )}
+                      truncateAt={cutOffIndex}
                       item={service}
                       withButtonLink={true}
                       buttonLink={service.href}
