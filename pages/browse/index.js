@@ -79,7 +79,7 @@ const Browse = ({ session }) => {
                           {service?.description?.slice(cutOffIndex).trimStart()}
                         </Markdown>
                       )}
-                      truncatedLength={cutOffIndex}
+                      truncateAt={cutOffIndex}
                       item={service}
                       withButtonLink={true}
                       buttonLink={service.href}
