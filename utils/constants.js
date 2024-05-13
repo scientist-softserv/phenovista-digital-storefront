@@ -16,8 +16,8 @@ export const ABOUT_US_TEXT = `PhenoVista is a leading provider of disease-releva
 
 export const LOGO = {
   alt: 'A yellow artistic outline drawing next to the word PhenoVista',
-  src: logo.src,
   logoUrl: 'https://phenovista.com/',
+  src: logo.src,
 }
 
 export const FOOTER_NAME = 'PhenoVista Biosciences'
