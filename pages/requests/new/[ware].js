@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { default as BsForm } from 'react-bootstrap/Form'
 import Form from '@rjsf/core'
 import validator from '@rjsf/validator-ajv8'
+import he from 'he'
 import { useRouter } from 'next/router'
 import { signIn } from 'next-auth/react'
 import {
@@ -19,7 +20,6 @@ import {
   buttonBg,
   configureErrors,
   createRequest,
-  removeHtmlSpaces,
   requestFormHeaderBg,
   sendRequestToVendor,
   useInitializeRequest,
@@ -182,11 +182,13 @@ const NewRequest = ({ session }) => {
         <Title title={dynamicForm.name || ''} addClass='my-4' />
         {dynamicForm.schema ? (
           <>
-            <TextBox
-              text={removeHtmlSpaces(ware?.snippet)}
-              size='large'
-              style={{ fontWeight: '550' }}
-            />
+            {he.decode(ware?.snippet).trim() &&
+              <TextBox
+                text={ware.snippet}
+                size='large'
+                style={{ fontWeight: '550' }}
+              />
+            }
             <Form
               formData={formData}
               onChange={e => setFormData(e.formData)}
