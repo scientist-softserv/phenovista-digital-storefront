@@ -262,7 +262,7 @@ export const configureDynamicFormSchema = (defaultSchema) => {
 
   Object.entries(defaultSchema.properties).forEach(prop => {
     const [key, value] = prop
-    let adjustedProperty = prop
+    let adjustedProperty = value
 
     if (!removedProperties.includes(key)) {
       if (value.required) {
