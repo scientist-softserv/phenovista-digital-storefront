@@ -19,6 +19,7 @@ import {
   buttonBg,
   configureErrors,
   createRequest,
+  removeHtmlSpaces,
   requestFormHeaderBg,
   sendRequestToVendor,
   useInitializeRequest,
@@ -182,7 +183,7 @@ const NewRequest = ({ session }) => {
         {dynamicForm.schema ? (
           <>
             <TextBox
-              text={ware?.snippet}
+              text={removeHtmlSpaces(ware?.snippet)}
               size='large'
               style={{ fontWeight: '550' }}
             />

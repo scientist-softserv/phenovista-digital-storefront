@@ -89,3 +89,8 @@ export const truncateDescription = (desc = '', maxLength, isOpen) => {
   const ellipsis = isOpen ? '' : '...'
   return { truncated: desc.slice(0, lastSpaceIndex) + ellipsis, cutOffIndex: lastSpaceIndex }
 }
+
+export const removeHtmlSpaces = (text) => {
+  const regex = /&[a-z]+;/g
+  return text?.replace(regex, '')
+}
